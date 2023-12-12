@@ -11,6 +11,9 @@ export default {
       },
       colors:{
         Yellow: "#F8CF2B"
+      },
+      skew: {
+        '8': "8deg"
       }
     },
   },
