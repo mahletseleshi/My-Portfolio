@@ -4,6 +4,7 @@ import Gallery from "./components/Gallery"
 import Socials from "./components/Socials"
 import About from "./components/About"
 import Portfolio from "./components/Portfolio"
+import Experience from "./components/Experience"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
      <Socials />
      <About />
      <Portfolio />
+     <Experience />
     </div>
 
   )
