@@ -62,11 +62,11 @@ const Portfolio = () => {
 
   return (
     <div className="relative flex-col items-center justify-center h-screen ">
-      <div className="absolute inset-0 bg-[#0F2A3D] -skew-y-8 w-full h-full"></div>
+      <div className="absolute inset-0 bg-[#0F2A3D] -skew-y-6 w-full h-full"></div>
       <div className="relative flex flex-col items-center space-y-24 justify-center">
-        <div>
+        <div className="pt-[50px]">
         <h1 className="text-[32px]  flex items-center justify-center text-Yellow mt-10 z-10">PORTFOLIO</h1>
-        <h1 className="text-[70px]  flex items-center justify-center absolute ml-[-100px]   text-Yellow/20 -top-7 mt-10 text-Yellow z-10">
+        <h1 className="text-[70px] pt-[50px] group flex items-center justify-center absolute ml-[-100px]   text-Yellow/20 -top-7 mt-10 text-Yellow z-10">
           PORTFOLIO
         </h1>
         </div>
@@ -111,8 +111,8 @@ const Portfolio = () => {
 
 
         </div>
-           <div className="flex gap-5 cursor-pointer">
-        <button onClick={prevItem}><FaArrowLeft size={30} className="border-2 border-black rounded-full p-2 hover:bg-Yellow duration-300 hover:border-none"/></button>
+           <div className="flex gap-5 cursor-pointer ">
+        <button onClick={prevItem}><FaArrowLeft size={30} className="border-2  border-black rounded-full p-2 hover:bg-Yellow duration-300 hover:border-none"/></button>
         <button onClick={nextItem}><FaArrowRight size={30} className="bg-Yellow rounded-full p-2 hover:bg-black hover:text-white"/></button>
         </div>
        
