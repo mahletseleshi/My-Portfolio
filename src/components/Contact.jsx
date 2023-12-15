@@ -1,13 +1,31 @@
-
-
-
-
-
-
-
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_is07k8l",
+        "template_myufr2e",
+        form.current,
+        "MlfQEUSlyqYRtj00P"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Thank you, Message Sent")
+          e.target.reset
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="relative flex-col items-center justify-center mt-[200px] h-screen ">
       <div className="absolute inset-0 bg-[#0F2A3D] skew-y-6 w-full h-screen"></div>
@@ -25,8 +43,8 @@ const Contact = () => {
           <div className="w-[50%] space-y-8 text-white">
             <h2 className="text-7xl font-Signature text-Yellow">Lets Talk</h2>
             <p>
-              Ready to turn ideas into reality or have a project in mind? I would
-              love to hear from you. Lets collaborate and create something
+              Ready to turn ideas into reality or have a project in mind? I
+              would love to hear from you. Lets collaborate and create something
               extraordinary together.
             </p>
             <p className="text-Yellow">🚀 Start Your Project Now!</p>
@@ -40,11 +58,12 @@ const Contact = () => {
           </div>
 
           <div className="text-white bg-white/10 px-6 py-8 rounded-md w-[35%]">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="mb-4">
                 <label className="block mb-2 text-sm font-bold">Name</label>
                 <input
                   type="text"
+                  name= "from_name"
                   className="w-full p-2 border  bg-white/10 border-gray-300 rounded-md"
                   placeholder="Enter your name"
                 />
@@ -60,10 +79,9 @@ const Contact = () => {
               <div className="mb-4">
                 <label className="block mb-2 text-sm font-bold">Message</label>
                 <textarea
-                 placeholder="Type your message"
+                  placeholder="Type your message"
                   className="w-full p-2 border bg-white/10 border-gray-300 rounded-md resize-none"
                   rows="4"
-                 
                 ></textarea>
               </div>
               <button
@@ -75,7 +93,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        
       </div>
       <div className="bg-[#0F2A3D] mt-[-150px] w-full h-[30%]"></div>
     </div>
