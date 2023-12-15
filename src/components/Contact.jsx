@@ -12,7 +12,7 @@ const Contact = () => {
         "service_is07k8l",
         "template_myufr2e",
         form.current,
-        "MlfQEUSlyqYRtj00P"
+        "4xM7U3FFHE8wW9EQC"
       )
       .then(
         (result) => {
