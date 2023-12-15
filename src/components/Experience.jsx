@@ -1,4 +1,4 @@
-import Adobe from "../assets/Adobe illustrator.png";
+import Adobe from "../assets/Adobe Illustrator.png";
 import Indesign from "../assets/Adobe InDesign.png";
 import Canva from "../assets/Canva.png";
 import CSS3 from "../assets/CSS3.png";
