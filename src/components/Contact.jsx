@@ -79,6 +79,7 @@ const Contact = () => {
               <div className="mb-4">
                 <label className="block mb-2 text-sm font-bold">Message</label>
                 <textarea
+                name="message"
                   placeholder="Type your message"
                   className="w-full p-2 border bg-white/10 border-gray-300 rounded-md resize-none"
                   rows="4"
