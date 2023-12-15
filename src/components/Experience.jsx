@@ -39,10 +39,10 @@ const Experience = () => {
 
        <div className="flex items-start justify-between">
       <div className="flex flex-col gap-8 mt-10 w-[30%]">
-        <div className="flex items-start justify-between ">
+      <div className="flex items-center justify-between ">
           <div>
-            <h1 className="text-[22px] font-bold">Front End Developer</h1>
-            <div className="text-[12px] flex items-center justify-between">
+            <h1 className="text-[19px]">Front End Developer</h1>
+            <div className="text-[10px] flex items-center justify-between">
               <p>Kuraz Technologies</p>
               <p>2022-PRESENT</p>
             </div>
@@ -57,7 +57,7 @@ const Experience = () => {
           </div>
 
           <div>
-            <p className="text-[22px] font-semibold">2023</p>
+            <p>2023</p>
           </div>
         </div>
 

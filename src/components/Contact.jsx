@@ -74,7 +74,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        
       </div>
+      <div className="bg-[#0F2A3D] mt-[-100px] w-full h-[30%]"></div>
     </div>
   );
 };
