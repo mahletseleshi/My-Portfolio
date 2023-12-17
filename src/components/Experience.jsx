@@ -26,7 +26,7 @@ import { IoBagHandleSharp } from "react-icons/io5";
 
 const Experience = () => {
   return (
-    <div className="mt-44 flex flex-col  relative justify-center w-full my-24 px-32 gap-12">
+    <div id="Experience" className="mt-44 flex flex-col  relative justify-center w-full my-24 px-32 gap-12">
      
       <div className="flex flex-col items-center justify-between">
         <h1 className="text-[32px] text-[#0F2A3D]">EXPERIENCE</h1>

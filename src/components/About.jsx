@@ -2,7 +2,7 @@ import about from "../assets/About.png";
 
 const About = () => {
   return (
-    <div className="flex flex-col  relative items-center justify-center w-full my-24 px-32">
+    <div id="About" className="flex flex-col  relative items-center justify-center w-full my-24 px-32">
       <h1 className="text-[32px]">ABOUT</h1>
       <h1 className="text-[70px] absolute -top-6 text-black/20">ABOUT</h1>
       <div className="flex items-center justify-between ">
