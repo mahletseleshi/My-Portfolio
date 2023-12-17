@@ -3,7 +3,7 @@ import header from "../assets/Header.png";
 
 const Header = () => {
   return (
-    <div id="Header" className="bg-gradient-to-r box-border h-screen from-[#0F2A3D] flex justify-between items-center px-32 to-[#3F5564] text-white">
+    <div id="Header" className="bg-gradient-to-r box-border  w-full h-screen from-[#0F2A3D] flex justify-between items-center px-32 to-[#3F5564] text-white">
       <div className="flex flex-col space-y-7 justify-start items-start">
         <p>Hello, I am Mahlet👋 </p>
         <h1 className="text-7xl font-semibold">
@@ -18,10 +18,9 @@ const Header = () => {
           <FaArrowRightLong fill="Yellow" />
         </button>
       </div>
-      <div className="mr-24">
+      <div className= " hidden md:block md:mr-24">
         <img src={header} alt="header" />
       </div>
-      <div></div>
     </div>
   );
 };

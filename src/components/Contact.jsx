@@ -39,8 +39,8 @@ const Contact = () => {
           </h1>
         </div>
 
-        <div className="flex items-start justify-between px-32 mb-[1000px] gap-10">
-          <div className="w-[50%] space-y-8 text-white">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between px-4 md:px-32  gap-10">
+          <div className="w-[80%] md:w-[50%] space-y-8 text-white">
             <h2 className="text-7xl font-Signature text-Yellow">Lets Talk</h2>
             <p>
               Ready to turn ideas into reality or have a project in mind? I
@@ -57,7 +57,7 @@ const Contact = () => {
             <div></div>
           </div>
 
-          <div className="text-white bg-white/10 px-6 py-8 rounded-md w-[35%]">
+          <div className="text-white bg-white/10 px-6 py-8 rounded-md w-[70%] md:w-[35%]">
             <form ref={form} onSubmit={sendEmail}>
               <div className="mb-4">
                 <label className="block mb-2 text-sm font-bold">Name</label>
@@ -99,7 +99,7 @@ const Contact = () => {
           <p>Mahlet Seleshi💛©2023 All Rights Reserved.</p>
         </div>
       </div>
-      <div className="bg-[#0F2A3D] mt-[-300px] w-full h-[60%]"></div>
+      <div className="bg-[#0F2A3D] mt-[-550px] md:mt-[-300px] w-full md:h-[60%] h-[80%]"></div>
     </div>
   );
 };

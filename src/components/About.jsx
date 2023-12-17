@@ -2,15 +2,15 @@ import about from "../assets/About.png";
 
 const About = () => {
   return (
-    <div id="About" className="flex flex-col  relative items-center justify-center w-full my-24 px-32">
+    <div id="About" className="flex flex-col  relative items-center justify-center w-full my-24 md:px-32">
       <h1 className="text-[32px]">ABOUT</h1>
       <h1 className="text-[70px] absolute -top-6 text-black/20">ABOUT</h1>
-      <div className="flex items-center justify-between ">
-        <div className="w-[50%]">
+      <div className="  flex flex-col md:flex-row items-center justify-between ">
+        <div className=" w-[70%] md:w-[50%]">
           <img src={about} alt="about" />
         </div>
 
-        <div className="w-[50%] flex flex-col items-center justify-center">
+        <div className="w-[70%]  md:w-[50%] flex flex-col items-center justify-center">
           <p className="text-justify">
             Mahlet Seleshi, a seasoned frontend developer with 4+ years
             specializing in React. Proficient in crafting intuitive user
