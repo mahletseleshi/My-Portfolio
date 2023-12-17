@@ -4,7 +4,7 @@ import header from "../assets/Header.png";
 const Header = () => {
   return (
     <div id="Header" className="overflow-hidden bg-gradient-to-r box-border  w-full h-screen from-[#0F2A3D] flex justify-between items-center  px-4 md:px-32 to-[#3F5564] text-white">
-      <div className="flex flex-col space-y-7 justify-start items-start">
+      <div className="flex flex-col space-y-7 items-center justify-center md:justify-start md:items-start">
         <p>Hello, I am Mahlet👋 </p>
         <h1 className="text-5xl w-[60%] md:text-[65px] md:w-[80%] md:leading-tight font-semibold">
           I am a <span className="text-Yellow">Front End Developer</span>
