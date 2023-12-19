@@ -1,4 +1,5 @@
 import about from "../assets/About.png";
+import resume from "../assets/MahletSeleshi.pdf"
 
 const About = () => {
   return (
@@ -26,7 +27,8 @@ const About = () => {
             contributed to the development of robust and efficient applications.
           </p>
 
-          <button className="bg-Yellow px-4 py-2 rounded-md mt-6 border-2 border-black">Download Resume</button>
+          <a href={resume}
+            download= "Resume" className="bg-Yellow px-4 py-2 rounded-md mt-6 border-2 border-black hover:border-Yellow hover:bg-black hover:text-Yellow duration-500">Download Resume</a>
         </div>
       </div>
     </div>

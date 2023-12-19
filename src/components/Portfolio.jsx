@@ -13,7 +13,7 @@ const Portfolio = () => {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1
   };
@@ -35,15 +35,15 @@ const Portfolio = () => {
           </h1>
         </div>
 
-        <div className="w-full text-white">
+        <div className="w-[96%] text-white">
         <Slider {...settings}>
           {items.map((item) => (
-            <div key={item.id} className="hover:scale-90 gap-10 mx-10 grid grid-cols-1 md:grid-cols-3 duration-500">
+            <div key={item.id} className="hover:scale-90 duration-500">
             
               <img src={item.backgroundImg} alt={item.title} className=""></img>
               <div>
                 <h1 className="text-[28px] font-thin my-2">{item.title}</h1>
-                <p className="text-[12px] font-thin mb-2">{item.Description}</p>
+                <p className="text-[13px] font-thin mb-2">{item.Description}</p>
               </div>
               <div className="flex flex-col md:flex-row gap-4">
                 <a
@@ -58,7 +58,7 @@ const Portfolio = () => {
                   href={item.Demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-Yellow hover:cursor-pointer  text-black px-6 py-1 "
+                  className="bg-Yellow hover:cursor-pointer hover:bg-transparent border-2 border-Yellow hover:text-Yellow duration-500 text-black px-6 py-1 "
                 >
                   Demo
                 </a>

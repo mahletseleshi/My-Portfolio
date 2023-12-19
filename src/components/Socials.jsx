@@ -48,7 +48,7 @@ const Socials = () => {
             Resume <BsFillPersonLinesFill size={30} />
             </>
             ),
-            href: "./MahletSeleshi Resume.pdf",
+            href: "./MahletSeleshi.pdf",
             style: "rounded-tr-m",
             download: true,
         }
