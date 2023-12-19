@@ -25,7 +25,7 @@ const Portfolio = () => {
       className="relative  overflow flex-col w-[100%] items-center justify-center h-screen"
     >
       <div className="absolute inset-0 bg-[#0F2A3D] -skew-y-8 w-full h-screen"></div>
-      <div className="relative flex flex-col items-center space-y-24 justify-center w-[95%] mx-auto">
+      <div className="relative flex flex-col items-center space-y-24 justify-center max-w-[100%] md:max-w-[95%] mx-auto">
         <div className="pt-[50px]">
           <h1 className="text-[32px]  flex items-center justify-center text-Yellow mt-10 z-10">
             PORTFOLIO
@@ -45,7 +45,7 @@ const Portfolio = () => {
                 <h1 className="text-[28px] font-thin my-2">{item.title}</h1>
                 <p className="text-[12px] font-thin mb-2">{item.Description}</p>
               </div>
-              <div className="flex gap-4">
+              <div className="flex flex-col md:flex-row gap-4">
                 <a
                   href={item.code}
                   target="_blank"
