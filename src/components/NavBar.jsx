@@ -82,9 +82,9 @@ const NavBar = () => {
       </div>
 
       {/* Mobile navigation */}
-      <div className="md:hidden">
-        <div onClick={toggleNavBar}>
-          {isOpen ? <TfiClose /> : <CiMenuFries />}
+      <div className="md:hidden z-1">
+        <div onClick={toggleNavBar} className="z-10">
+          {isOpen ? <TfiClose size={30} /> : <CiMenuFries size={30} />}
         </div>
 
         {isOpen && (
@@ -93,59 +93,59 @@ const NavBar = () => {
               className="fixed inset-0 bg-black opacity-50 z-40"
               onClick={toggleNavBar}
             ></div>
-            <ul className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-Yellow/30">
+            <ul className="fixed top-0 left-0 w-full text-2xl text-[#0F2A3D] space-y-6 h-[50%] flex flex-col items-center justify-center bg-Yellow">
               <Link
+                activeClass="active"
                 to="#Home"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={1000}
                 onSetActive={handleSetActive}
-                onClick={toggleNavBar}
               >
                 Home
               </Link>
               <Link
+                activeClass="active"
                 to="#About"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={1000}
                 onSetActive={handleSetActive}
-                onClick={toggleNavBar}
               >
                 About
               </Link>
               <Link
+                activeClass="active"
                 to="#Portfolio"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={1000}
                 onSetActive={handleSetActive}
-                onClick={toggleNavBar}
               >
                 Portfolio
               </Link>
               <Link
+                activeClass="active"
                 to="#Experience"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={1000}
                 onSetActive={handleSetActive}
-                onClick={toggleNavBar}
               >
                 Experience
               </Link>
               <Link
+                activeClass="active"
                 to="#Contact"
                 spy={true}
                 smooth={true}
                 offset={-100}
                 duration={1000}
                 onSetActive={handleSetActive}
-                onClick={toggleNavBar}
               >
                 Contact
               </Link>
