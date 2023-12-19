@@ -38,7 +38,7 @@ const Portfolio = () => {
         <div className="w-full text-white">
         <Slider {...settings}>
           {items.map((item) => (
-            <div key={item.id} className="hover:scale-90 gap-10 mx-10 grid grid-cols-3 duration-500">
+            <div key={item.id} className="hover:scale-90 gap-10 mx-10 grid grid-cols-1 md:grid-cols-3 duration-500">
             
               <img src={item.backgroundImg} alt={item.title} className=""></img>
               <div>

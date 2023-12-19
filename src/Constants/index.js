@@ -17,7 +17,7 @@ export const items = [
     {
       id: 2,
       backgroundImg: Planton,
-      title: `Planton`,
+      title: `Planton App`,
       Description: `A website made for movie enthusiasts. It came into life using Tailwind CSS and React JS.`,
       Demo: `https://www.w3schools.com/cssref/css3_pr_transform-origin.php`,
       code: `https://tailwindcss.com/docs/rotate`,
