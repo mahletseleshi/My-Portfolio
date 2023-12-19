@@ -25,7 +25,7 @@ const Portfolio = () => {
       className="relative  overflow flex-col w-[100%] items-center justify-center h-screen"
     >
       <div className="absolute inset-0 bg-[#0F2A3D] -skew-y-8 w-full h-screen"></div>
-      <div className="relative flex flex-col items-center space-y-24 justify-center">
+      <div className="relative flex flex-col items-center space-y-24 justify-center w-[95%] mx-auto">
         <div className="pt-[50px]">
           <h1 className="text-[32px]  flex items-center justify-center text-Yellow mt-10 z-10">
             PORTFOLIO
@@ -55,10 +55,10 @@ const Portfolio = () => {
                   Code
                 </a>
                 <a
-                  href={item.demo}
+                  href={item.Demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-Yellow  text-black px-6 py-1 "
+                  className="bg-Yellow hover:cursor-pointer  text-black px-6 py-1 "
                 >
                   Demo
                 </a>
