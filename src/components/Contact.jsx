@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className="relative flex-col items-center justify-center mt-[200px] h-screen ">
+    <div id="Contact" className="relative flex-col items-center justify-center  overflow-hidden mt-[200px] h-screen ">
       <div className="absolute inset-0 bg-[#0F2A3D] skew-y-6 w-full h-screen"></div>
       <div className="relative flex flex-col items-center space-y-24 justify-center">
         <div className="pt-[50px]">

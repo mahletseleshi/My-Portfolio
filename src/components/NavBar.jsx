@@ -1,6 +1,6 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { CiMenuFries } from "react-icons/ci";
-import { TfiClose } from "react-icons/tfi";
+import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -84,7 +84,7 @@ const NavBar = () => {
       {/* Mobile navigation */}
       <div className="md:hidden z-1">
         <div onClick={toggleNavBar} className="z-10">
-          {isOpen ? <TfiClose size={30} /> : <CiMenuFries size={30} />}
+          {isOpen ? <AiOutlineClose  size={30} /> : <CiMenuFries size={30} />}
         </div>
 
         {isOpen && (
@@ -95,57 +95,26 @@ const NavBar = () => {
             ></div>
             <ul className="fixed top-0 left-0 w-full text-2xl text-[#0F2A3D] space-y-6 h-[50%] flex flex-col items-center justify-center bg-Yellow">
               <Link
-                activeClass="active"
-                to="#Home"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onSetActive={handleSetActive}
-              >
+                to="#Home">
                 Home
               </Link>
               <Link
-                activeClass="active"
-                to="#About"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onSetActive={handleSetActive}
+                to="#About"             
               >
                 About
               </Link>
               <Link
-                activeClass="active"
-                to="#Portfolio"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onSetActive={handleSetActive}
+                to="#Portfolio"   
               >
                 Portfolio
               </Link>
               <Link
-                activeClass="active"
                 to="#Experience"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onSetActive={handleSetActive}
               >
                 Experience
               </Link>
               <Link
-                activeClass="active"
-                to="#Contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onSetActive={handleSetActive}
+                to="#Contact"       
               >
                 Contact
               </Link>

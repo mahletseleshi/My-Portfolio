@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <div
       id="Header"
-      className="overflow-hidden bg-gradient-to-r box-border  w-full h-screen from-[#0F2A3D] flex justify-between items-center  px-2 md:px-32 to-[#3F5564] text-white"
+      className="overflow-hidden bg-gradient-to-r  w-full h-screen from-[#0F2A3D] flex justify-between items-center md:px-32 to-[#3F5564] text-white"
     >
-      <div className="flex flex-col space-y-5 items-center justify-center mx-auto md:justify-start md:items-start w-[80%] basis-[60%]">
+      <div className="flex flex-col space-y-5 items-center justify-center mx-auto md:justify-start md:items-start w-[90%] basis-[60%]">
         <p className="text-[25px] md:text-[15px]">Hello, I am Mahlet👋 </p>
         <h1 className="text-5xl w-[70%] text-center md:text-left md:text-[65px] md:w-[90%] md:leading-[1.1] font-semibold">
           I am a <span className="text-Yellow ">{text}</span>{" "}
