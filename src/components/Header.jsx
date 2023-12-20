@@ -2,6 +2,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { HashLink as Link} from "react-router-hash-link";
 import header from "../assets/Header.png";
 
+
 const Header = () => {
   const [text] = useTypewriter({
     words: ["Front End Developer", " UI/UX Designer"],

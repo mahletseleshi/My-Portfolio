@@ -34,7 +34,7 @@ const Socials = () => {
             id: 3,
             child:(
              <> 
-            Email <HiOutlineMail size={30} fill="black"/>
+            Email <HiOutlineMail size={30} />
             </>
             ),
             href: "mailto: mahletseleshi224@gmail.com",
@@ -45,7 +45,7 @@ const Socials = () => {
             id: 4,
             child:(
              <> 
-            Resume <BsFillPersonLinesFill size={30} />
+            Resume <BsFillPersonLinesFill size={30}  />
             </>
             ),
             href: "./MahletSeleshi.pdf",

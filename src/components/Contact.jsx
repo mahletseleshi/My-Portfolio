@@ -1,5 +1,8 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaPhone } from "react-icons/fa6";
 
 const Contact = () => {
   const form = useRef();
@@ -17,8 +20,8 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("Thank you, Message Sent")
-          e.target.reset
+          console.log("Thank you, Message Sent");
+          e.target.reset;
         },
         (error) => {
           console.log(error.text);
@@ -27,7 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className="relative flex-col items-center justify-center  overflow-hidden mt-[200px] h-screen ">
+    <div
+      id="Contact"
+      className="relative flex-col items-center justify-center mt-[200px] h-screen "
+    >
       <div className="absolute inset-0 bg-[#0F2A3D] skew-y-6 w-full h-screen"></div>
       <div className="relative flex flex-col items-center space-y-24 justify-center">
         <div className="pt-[50px]">
@@ -54,7 +60,12 @@ const Contact = () => {
             </p>
             <p>Lets make your vision come to life!</p>
 
-            <div></div>
+            <div className="flex items-center  gap-10">
+            <a href="https://github.com/mahletseleshi"  target="_blank" rel="noreferrer"><FaGithub fill="white" size={25} /></a>
+            <a href="https://www.linkedin.com/in/mahletseleshi" target="_blank" rel="noreferrer"><FaLinkedin fill="white" size={25}/></a> 
+            <a href="mailto: mahletseleshi224@gmail.com"target="_blank" rel="noreferrer"><HiOutlineMail border="white" size={30}/></a> 
+            <a href="tel: +251913714106"target="_blank" rel="noreferrer"><FaPhone fill="white" size={20}/></a> 
+          </div>
           </div>
 
           <div className="text-white bg-white/10 px-6 py-8 rounded-md w-[70%] md:w-[35%]">
@@ -62,7 +73,7 @@ const Contact = () => {
               <div className="mb-4">
                 <label className="block mb-2 text-sm font-bold">Name</label>
                 <input
-                 name= "from_name"
+                  name="from_name"
                   type="text"
                   className="w-full p-2 border  bg-white/10 border-gray-300 rounded-md"
                   placeholder="Enter your name"
