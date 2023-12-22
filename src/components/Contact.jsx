@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Toaster, toast } from 'sonner';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa6";
@@ -96,12 +97,18 @@ const Contact = () => {
                   rows="4"
                 ></textarea>
               </div>
-              <button
+              <div>
+              <Toaster richColors
+              position="bottom-right"
+              expand={false}
+               />
+              <button onClick={() => toast.success('Successfuly Sent')}
                 type="submit"
                 className="w-full bg-Yellow duration-300 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-md"
               >
                 Submit
               </button>
+              </div>
             </form>
           </div>
         </div>
