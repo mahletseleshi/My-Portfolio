@@ -111,7 +111,7 @@ const Experience = () => {
               <IoBagHandleSharp
                 size={30}
                 fill="#F8CF2B"
-                className="bg-[#0f2a3d] rounded-full ml-[22px] w-12 h-12 p-[10px]"
+                className="bg-[#0f2a3d] rounded-full ml-[14px] w-12 h-12 p-[10px]"
               />
             </div>
 
