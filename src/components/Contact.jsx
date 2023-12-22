@@ -102,7 +102,7 @@ const Contact = () => {
               position="bottom-right"
               expand={false}
                />
-              <button onClick={() => toast.success('Successfuly Sent')}
+              <button onClick={() => toast.success('Successfully Sent')}
                 type="submit"
                 className="w-full bg-Yellow duration-300 hover:bg-yellow-300 text-white font-bold py-2 px-4 rounded-md"
               >

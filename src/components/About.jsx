@@ -11,10 +11,10 @@ const About = () => {
           <img src={about} alt="about" />
         </div>
 
-        <div className="w-[70%]  md:w-[50%] flex flex-col items-center justify-center">
+        <div className="w-[70%]  md:w-[50%] mt-[100px] flex flex-col items-center justify-center">
           <p className="text-justify">
-            Mahlet Seleshi, a seasoned frontend developer with 4+ years
-            specializing in React. Proficient in crafting intuitive user
+            Mahlet Seleshi, a seasoned frontend developer and UI/UX Designer with 4+ years
+            ox experience specializing in React. Proficient in crafting intuitive user
             interfaces, I excel in responsive design, creating seamless web
             experiences. Skilled in architecting robust solutions, I bring a
             blend of creativity and functionality to every project. Committed to

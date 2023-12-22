@@ -34,7 +34,29 @@ const Experience = () => {
           <div className="flex items-center justify-between ">
             <div>
               <h1 className="text-[19px]">Front End Developer</h1>
-              <div className="text-[10px] flex items-center justify-between">
+              <div className="text-[10.5px] flex items-center justify-between">
+                <p>Kuraz Technologies</p>
+                <p>2020-PRESENT</p>
+              </div>
+            </div>
+
+            <div>
+              <IoBagHandleSharp
+                size={30}
+                fill="#F8CF2B"
+                className="bg-[#0f2a3d] rounded-full w-12 h-12 p-[10px]"
+              />
+            </div>
+
+            <div>
+              <p>Present</p>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div>
+              <h1 className="text-[19px]">Front End Developer</h1>
+              <div className="text-[10.5px] flex items-center justify-between">
                 <p>Kuraz Technologies</p>
                 <p>2022-PRESENT</p>
               </div>
@@ -49,16 +71,17 @@ const Experience = () => {
             </div>
 
             <div>
-              <p>2023</p>
+              <p>Present</p>
             </div>
           </div>
+
 
           <div className="flex items-center justify-between ">
             <div>
-              <h1 className="text-[19px]">Front End Developer</h1>
-              <div className="text-[10px] flex items-center justify-between">
-                <p>Kuraz Technologies</p>
-                <p>2022-PRESENT</p>
+              <h1 className="text-[19px]">UI/UX Designer</h1>
+              <div className="text-[11px] flex items-center justify-between">
+                <p>JSDP</p>
+                <p>2021-2023</p>
               </div>
             </div>
 
@@ -66,7 +89,7 @@ const Experience = () => {
               <IoBagHandleSharp
                 size={30}
                 fill="#F8CF2B"
-                className="bg-[#0f2a3d] rounded-full w-12 h-12 p-[10px]"
+                className="bg-[#0f2a3d] rounded-full ml-[20px] w-12 h-12 p-[10px]"
               />
             </div>
 
@@ -77,10 +100,10 @@ const Experience = () => {
 
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-[19px]">Front End Developer</h1>
-              <div className="text-[10px] flex items-center justify-between">
-                <p>Kuraz Technologies</p>
-                <p>2022-PRESENT</p>
+              <h1 className="text-[19px]">React Developer</h1>
+              <div className="text-[11px] flex items-center gap-4 justify-between">
+                <p>The Hot platform</p>
+                <p>2021-2022</p>
               </div>
             </div>
 
@@ -88,78 +111,12 @@ const Experience = () => {
               <IoBagHandleSharp
                 size={30}
                 fill="#F8CF2B"
-                className="bg-[#0f2a3d] rounded-full w-12 h-12 p-[10px]"
+                className="bg-[#0f2a3d] rounded-full ml-[22px] w-12 h-12 p-[10px]"
               />
             </div>
 
             <div>
-              <p>2023</p>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-[19px]">Front End Developer</h1>
-              <div className="text-[10px] flex items-center justify-between">
-                <p>Kuraz Technologies</p>
-                <p>2022-PRESENT</p>
-              </div>
-            </div>
-
-            <div>
-              <IoBagHandleSharp
-                size={30}
-                fill="#F8CF2B"
-                className="bg-[#0f2a3d] rounded-full w-12 h-12 p-[10px]"
-              />
-            </div>
-
-            <div>
-              <p>2023</p>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-[19px]">Front End Developer</h1>
-              <div className="text-[10px] flex items-center justify-between">
-                <p>Kuraz Technologies</p>
-                <p>2022-PRESENT</p>
-              </div>
-            </div>
-
-            <div>
-              <IoBagHandleSharp
-                size={30}
-                fill="#F8CF2B"
-                className="bg-[#0f2a3d] rounded-full w-12 h-12 p-[10px]"
-              />
-            </div>
-
-            <div>
-              <p>2023</p>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-[19px]">Front End Developer</h1>
-              <div className="text-[10px] flex items-center justify-between">
-                <p>Kuraz Technologies</p>
-                <p>2022-PRESENT</p>
-              </div>
-            </div>
-
-            <div>
-              <IoBagHandleSharp
-                size={30}
-                fill="#F8CF2B"
-                className="bg-[#0f2a3d] rounded-full w-12 h-12 p-[10px]"
-              />
-            </div>
-
-            <div>
-              <p>2023</p>
+              <p>20222</p>
             </div>
           </div>
         </div>
