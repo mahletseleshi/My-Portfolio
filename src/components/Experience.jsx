@@ -75,7 +75,6 @@ const Experience = () => {
             </div>
           </div>
 
-
           <div className="flex items-center justify-between ">
             <div>
               <h1 className="text-[19px]">UI/UX Designer</h1>
@@ -122,6 +121,7 @@ const Experience = () => {
         </div>
 
         <div className="grid grid-cols-4 gap-5 md:mt-10 w-[70%] mt-16 md:w-[40%] ">
+
           <img src={HTML} alt="" className="hover:scale-75 duration-500" />
           <img src={CSS3} alt="" className="hover:scale-75 duration-500" />
           <img

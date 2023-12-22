@@ -1,10 +1,32 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+
+  const[scrolling, setScrolling] = useState(false)
+
+  useEffect (() =>{
+       const handleScroll = () =>{
+
+        if(window.scrollY > 200){
+          setScrolling(true)
+        }
+        else {
+          setScrolling(false)
+        }
+       };
+
+       window.addEventListener("scroll", handleScroll);
+
+       return() =>{
+        window.removeEventListener("scroll", handleScroll)
+       }
+
+  }, [])
+
 
   const toggleNavBar = () => {
     setIsOpen(!isOpen);
@@ -15,7 +37,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between w-full fixed text-white px-10 z-[10000] md:px-32 py-4">
+    <div className={`flex justify-between w-full fixed text-white px-10 z-[10000] transition-all ease-in-out duration-300 md:px-32 py-4 ${scrolling ? "bg-[#0F2A3D]" : "bg-transparent"}`}>
       <div>
         <Link to="/">
           <h2 className="font-Signature text-[20px]">Mahlet Seleshi</h2>
@@ -23,9 +45,10 @@ const NavBar = () => {
       </div>
 
       {/* Desktop navigation */}
-      <div className="hidden md:flex items-center gap-10">
+      <div className="hidden md:flex items-center  gap-10">
         <Link
           activeClass="active"
+          className="hover:text-Yellow"
           to="#Home"
           spy={true}
           smooth={true}
@@ -36,6 +59,7 @@ const NavBar = () => {
           Home
         </Link>
         <Link
+        className="hover:text-Yellow"
           activeClass="active"
           to="#About"
           spy={true}
@@ -48,6 +72,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass="active"
+          className="hover:text-Yellow"
           to="#Portfolio"
           spy={true}
           smooth={true}
@@ -59,6 +84,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass="active"
+          className="hover:text-Yellow"
           to="#Experience"
           spy={true}
           smooth={true}
@@ -70,6 +96,7 @@ const NavBar = () => {
         </Link>
         <Link
           activeClass="active"
+          className="hover:text-Yellow"
           to="#Contact"
           spy={true}
           smooth={true}
@@ -101,21 +128,25 @@ const NavBar = () => {
                 Home
               </Link>
               <Link
+              className="hover:text-Yellow"
                 to="#About"             
                 onClick = {toggleNavBar}>
                 About
               </Link>
               <Link
+              className="hover:text-Yellow"
                 to="#Portfolio"   
                 onClick = {toggleNavBar}>
                 Portfolio
               </Link>
               <Link
+              className="hover:text-Yellow"
                 to="#Experience"
                 onClick = {toggleNavBar}>
                 Experience
               </Link>
               <Link
+              className="hover:text-Yellow"
                 to="#Contact"       
                 onClick = {toggleNavBar}>
                 Contact

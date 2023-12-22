@@ -40,7 +40,7 @@ const Portfolio = () => {
           {items.map((item) => (
             <div key={item.id} className="hover:scale-90 duration-500">
             
-              <img src={item.backgroundImg} alt={item.title}className="overflow-x-auto"></img>
+              <img src={item.backgroundImg} alt={item.title}className="overflow-x"></img>
               <div>
                 <h1 className="text-[28px] font-thin my-2">{item.title}</h1>
                 <p className="text-[13px] font-thin mb-2">{item.Description}</p>
