@@ -28,7 +28,7 @@ const Header = () => {
           An experienced frontend developer with enthusiastic perception of
           making the internet an intuitive and interactive place.
         </p>
-      <button className=" group flex z-10 gap-2 justify-center items-center border-2 px-4 py-2 text-Yellow border-Yellow hover:cursor-pointer hover:bg-Yellow hover:text-black duration-500">
+      <button className="relative border-2 border-Yellow bg-transparent py-2.5 px-5 font-medium uppercase text-Yellow transition-colors before:absolute before:left-0 before:top-0 before:z-[-100000] before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-Yellow before:transition-transform before:duration-500 before:content-[''] hover:text-black hover:z-[1000] before:hover:scale-x-100">
       <Link
             activeClass="active"
             to="#Portfolio"
